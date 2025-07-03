@@ -1,0 +1,41 @@
+@use "../../sass/components/variablesAndMixin";
+
+.contenedor_perfume{
+    @include variablesAndMixin.contenedorPerfume;
+
+    .titulo_perfume{
+        color: white;
+        font-size: 3em;
+        text-align: center;
+        margin: auto;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        grid-area: titulo;
+    }
+    .contenedor_imagen_perfume{
+        grid-area: imagen;
+        margin-left: 70px;
+        .imagen_perfume{
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+    .parrafo_perfume{
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 600px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        grid-area: descripcion;
+        background-color: variablesAndMixin.$backgroundColor;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+
+
+

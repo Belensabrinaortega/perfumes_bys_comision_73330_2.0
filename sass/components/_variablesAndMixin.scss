@@ -1,0 +1,32 @@
+@mixin contenedorInicio {
+    background-image: url(./imagenes/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "parrafo parrafo imagen";
+    align-items: center;
+    justify-items: center;
+}
+
+@mixin contenedorPerfume {    
+    background-image: url(./imagenes/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "titulo titulo titulo"
+        " . imagen descripcion";
+    justify-items: center;
+    padding: 20px;
+    align-items: center;
+}
+
+$backgroundColor:rgba(0, 0, 0, 0.5);

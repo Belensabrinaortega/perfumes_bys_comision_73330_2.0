@@ -1,0 +1,32 @@
+@use "./sass/components/header";
+@use "./sass/components/inicio";
+@use "./sass/components/nosotros";
+@use "./sass/components/contacto";
+@use "./sass/components/perfumes";
+@use "./sass/components/footer";
+@use "./sass/components/responsive";
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+};
+
+.contenedor_imagen_perfume:hover{
+    transform: scale(1.2);;
+    transition: transform 0.3s ease-in-out;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.contenedor_imagen:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}

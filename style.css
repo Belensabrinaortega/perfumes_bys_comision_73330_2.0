@@ -1,0 +1,305 @@
+.bg-body-tertiary {
+  background-color: #d6cccc !important;
+}
+
+.contenedor_inicio {
+  background-image: url(./imagenes/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "titulo titulo titulo" "parrafo parrafo imagen";
+  align-items: center;
+  justify-items: center;
+}
+.contenedor_inicio .titulo_inicio {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  margin: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  grid-area: titulo;
+}
+.contenedor_inicio .parrafo {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  grid-area: parrafo;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.contenedor_inicio .contenedor_imagen {
+  grid-area: imagen;
+}
+.contenedor_inicio .contenedor_imagen .contenedor_imagen:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+.contenedor_inicio .contenedor_imagen .imagen_inicio {
+  width: 10vw;
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor_nosotros {
+  background-image: url(./imagenes/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.contenedor_nosotros p {
+  color: white;
+  font-family: fantasy;
+  font-size: 150%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.contenedor_texto {
+  width: 50%;
+  padding: 20px;
+  text-align: justify;
+  align-self: center;
+}
+
+#contenedor_contacto {
+  background-image: url(./imagenes/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+}
+#contenedor_contacto .contenedor_formu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+}
+#contenedor_contacto .contenedor_formu .formu {
+  padding: 20px;
+  border-radius: 10px;
+  width: 30vw;
+  height: fit-content;
+}
+#contenedor_contacto .contenedor_formu .formu form input[type=submit] {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  justify-self: center;
+}
+#contenedor_contacto .contenedor_formu .formu form input[type=nombre],
+#contenedor_contacto .contenedor_formu .formu form input[type=telefono] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+#contenedor_contacto .contenedor_formu textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: none;
+}
+#contenedor_contacto .contenedor_formu .imagen_formu {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#contenedor_contacto .contenedor_parrafo_contacto {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+#contenedor_contacto .contenedor_parrafo_contacto .contenedor_parrafo_contacto p:first-child {
+  font-weight: bold;
+}
+#contenedor_contacto .contenedor_parrafo_contacto .contenedor_parrafo_contacto p:last-child {
+  font-style: italic;
+}
+
+.contenedor_perfume {
+  background-image: url(./imagenes/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "titulo titulo titulo" " . imagen descripcion";
+  justify-items: center;
+  padding: 20px;
+  align-items: center;
+}
+.contenedor_perfume .titulo_perfume {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  margin: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  grid-area: titulo;
+}
+.contenedor_perfume .contenedor_imagen_perfume {
+  grid-area: imagen;
+  margin-left: 70px;
+}
+.contenedor_perfume .contenedor_imagen_perfume .imagen_perfume {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contenedor_perfume .parrafo_perfume {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  grid-area: descripcion;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+footer {
+  background-color: #d6cccc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+footer img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .contenedor_inicio {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo_inicio {
+    width: 50vw;
+  }
+  .contenedor_nosotros {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .contenedor_texto {
+    width: 99vw;
+    height: auto;
+  }
+  .titulo_inicio {
+    width: 100%;
+  }
+  .contenedor_contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor_formu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contenedor_parrafo_contacto {
+    display: none;
+  }
+  .formu {
+    width: fit-content;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor_perfume {
+    display: flex;
+    flex-direction: column;
+  }
+  .parrafo_perfume {
+    width: 90vw;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.contenedor_imagen_perfume:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.contenedor_imagen:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
