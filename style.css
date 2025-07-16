@@ -2,8 +2,14 @@
   background-color: #d6cccc !important;
 }
 
+header img {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+}
+
 .contenedor_inicio {
-  background-image: url(./imagenes/fondo.jpg);
+  background-image: url(./imagenes/fondo_1.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -49,9 +55,29 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.contenedor_inicio .contenedorBotonTienda {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  margin-top: 20px;
+}
+.contenedor_inicio .contenedorBotonTienda .botonTienda {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contenedor_inicio .contenedorBotonTienda .botonTienda:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
+  transition: transform 1s ease-in-out;
+}
 
 .contenedor_nosotros {
-  background-image: url(./imagenes/fondo.jpg);
+  background-image: url(./imagenes/fondo_1.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -81,7 +107,7 @@
 }
 
 #contenedor_contacto {
-  background-image: url(./imagenes/fondo.jpg);
+  background-image: url(./imagenes/fondo_1.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -210,7 +236,7 @@ footer {
   background-color: #d6cccc;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -228,8 +254,8 @@ footer a {
 }
 
 footer img {
-  width: 10vw;
-  height: 10vw;
+  width: 3vw;
+  height: 3vw;
   border-radius: 50%;
 }
 
@@ -237,6 +263,7 @@ footer img {
   .contenedor_inicio {
     display: flex;
     flex-direction: column;
+    overflow: scroll;
   }
   .titulo_inicio {
     width: 50vw;
@@ -273,6 +300,7 @@ footer img {
   .contenedor_perfume {
     display: flex;
     flex-direction: column;
+    overflow: scroll;
   }
   .parrafo_perfume {
     width: 90vw;

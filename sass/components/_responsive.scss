@@ -2,6 +2,7 @@
     .contenedor_inicio{
         display: flex;
         flex-direction: column;
+        overflow: scroll;
     
     }
     .titulo_inicio{
@@ -41,6 +42,7 @@
     .contenedor_perfume{
         display: flex;
         flex-direction: column;
+        overflow: scroll;
     }
     .parrafo_perfume{
         width: 90vw;

@@ -44,6 +44,28 @@
         }
     }
 
+    .contenedorBotonTienda {
+        display: flex;
+        justify-content: center;
+        align-items:right;
+        margin-top: 20px;
+
+        .botonTienda {
+            background-color: variablesAndMixin.$backgroundColor;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .botonTienda:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: scale(1.05);
+            transition: transform 01s ease-in-out;
+        }
+    }
+
 }
 
 
